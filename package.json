@@ -1,0 +1,27 @@
+{
+  "name": "chai-xsd-schema",
+  "version": "1.0.0",
+  "description": "Chai plugin for using libxml-xsd schema validation",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --compilers js:babel-core/register --require babel-polyfill --recursive --timeout 15000 test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zyrorl/chai-xsd-schema.git"
+  },
+  "keywords": [
+    "mocha",
+    "chai",
+    "libxml-xsd",
+    "xml",
+    "xsd",
+    "validation"
+  ],
+  "author": "Abilio Henrique <admin@zyrorl.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zyrorl/chai-xsd-schema/issues"
+  },
+  "homepage": "https://github.com/zyrorl/chai-xsd-schema#readme"
+}
