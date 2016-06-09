@@ -11,7 +11,7 @@ To install plugin simply run:
 Then add the following to your unit tests under your chai definition:
 
 ```javascript
-chai.use(require('chai-xsd-schema'))
+chai.use(require('chai-xsd-schema'));
 ```
 
 
