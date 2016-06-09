@@ -1,6 +1,6 @@
 {
   "name": "chai-xsd-schema",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Chai plugin for using libxml-xsd schema validation",
   "main": "build/index.js",
   "scripts": {
