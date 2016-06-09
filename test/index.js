@@ -9,10 +9,11 @@ describe('Test XML', () => {
     const schema = fs.readFileSync(`${__dirname}/schemas/dhl.xsd`, {
       encoding: 'utf8',
     });
+
     const xml = fs.readFileSync(`${__dirname}/vectors/invalidData.xml`, {
       encoding: 'utf8',
     });
-    // console.log(xml);
+
     expect(xml).to.not.be.validXML(schema);
   });
 
@@ -24,7 +25,7 @@ describe('Test XML', () => {
     const xml = fs.readFileSync(`${__dirname}/vectors/validData.xml`, {
       encoding: 'utf8',
     });
-    // console.log(xml);
+
     expect(xml).to.be.validXML(schema);
   });
 });
