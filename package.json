@@ -2,9 +2,13 @@
   "name": "chai-xsd-schema",
   "version": "1.0.0",
   "description": "Chai plugin for using libxml-xsd schema validation",
-  "main": "index.js",
+  "main": "build/index.js",
   "scripts": {
-    "test": "mocha --compilers js:babel-core/register --require babel-polyfill --recursive --timeout 15000 test"
+    "prepublish": "npm run clean && npm run build",
+    "clean": "rm -Rf build",
+    "test": "mocha --compilers js:babel-core/register --require babel-polyfill --recursive --timeout 15000 test",
+    "lint": "eslint index.js lib/**/**/*.js",
+    "build": "babel index.js --out-dir build --copy-files"
   },
   "repository": {
     "type": "git",
@@ -23,5 +27,24 @@
   "bugs": {
     "url": "https://github.com/zyrorl/chai-xsd-schema/issues"
   },
-  "homepage": "https://github.com/zyrorl/chai-xsd-schema#readme"
+  "homepage": "https://github.com/zyrorl/chai-xsd-schema#readme",
+  "dependencies": {
+    "bluebird": "^3.4.0",
+    "libxml-xsd": "^0.5.2"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.9.0",
+    "babel-core": "^6.9.1",
+    "babel-eslint": "^6.0.4",
+    "babel-plugin-add-module-exports": "^0.2.1",
+    "babel-plugin-transform-async-to-module-method": "^6.8.0",
+    "babel-preset-es2017": "^1.4.0",
+    "babel-register": "^6.9.0",
+    "babel-runtime": "^6.9.2",
+    "chai": "^3.5.0",
+    "eslint": "^2.11.1",
+    "eslint-config-airbnb-base": "^3.0.1",
+    "eslint-plugin-import": "^1.8.1",
+    "mocha": "^2.5.3"
+  }
 }

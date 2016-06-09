@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<req:ShipmentRequest xmlns:req="http://www.dhl.com" xmlns:dhl="http://www.dhl.com/datatypes_global.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.dhl.com ship-val-global-req.xsd" schemaVersion="4.0">
+    <Request>
+        <ServiceHeader>
+            <MessageTime>2016-05-30T20:00:00.000+07:00</MessageTime>
+            <MessageReference>T3354634634635454512312312346</MessageReference>
+            <SiteID>someSiteId</SiteID>
+            <Password>SomePassword</Password>
+        </ServiceHeader>
+    </Request>
+    <RequestedPickupTime>N</RequestedPickupTime>
+    <NewShipper>Y</NewShipper>
+    <LanguageCode>en</LanguageCode>
+    <PiecesEnabled>Y</PiecesEnabled>
+    <LatinResponseInd>Y</LatinResponseInd>
+    <Billing>
+        <ShipperAccountNumber>1234</ShipperAccountNumber>
+        <ShippingPaymentType>S</ShippingPaymentType>
+        <BillingAccountNumber>1234</BillingAccountNumber>
+        <DutyPaymentType>S</DutyPaymentType>
+        <DutyAccountNumber>1234</DutyAccountNumber>
+    </Billing>
+    <Consignee>
+        <CompanyName>Some Test Company</CompanyName>
+        <AddressLine>Rue Rosetti</AddressLine>
+        <City>Nice</City>
+        <Division>Nice</Division>
+        <DivisionCode>NY</DivisionCode>
+        <PostalCode>6300</PostalCode>
+        <CountryCode>FR</CountryCode>
+        <CountryName>France</CountryName>
+        <Contact>
+            <PersonName>Joe Citizen</PersonName>
+            <PhoneNumber>+33299999999</PhoneNumber><PhoneExtension/><FaxNumber/><Telex/></Contact>
+    </Consignee>
+    <Commodity>
+        <CommodityCode>234324</CommodityCode>
+        <CommodityName>234324</CommodityName>
+    </Commodity>
+    <Dutiable>
+        <DeclaredValue>34.32</DeclaredValue>
+        <DeclaredCurrency>EUR</DeclaredCurrency><ScheduleB/><ExportLicense/><ImportLicense/></Dutiable>
+    <ExportDeclaration>
+        <ExportReason>1</ExportReason>
+        <ExportLineItem>
+            <LineNumber>1</LineNumber>
+            <Quantity>1</Quantity>
+            <QuantityUnit>box</QuantityUnit>
+            <Description>Stuff</Description>
+            <Value>10</Value>
+            <ScheduleB>0601.10.0000</ScheduleB>
+            <ECCN>0A001</ECCN>
+            <Weight>
+                <Weight>1.45</Weight>
+                <WeightUnit>K</WeightUnit>
+            </Weight>
+        </ExportLineItem>
+    </ExportDeclaration>
+    <Reference>
+        <ReferenceID>12</ReferenceID>
+    </Reference>
+    <ShipmentDetails>
+        <NumberOfPieces>1</NumberOfPieces>
+        <Pieces>
+            <Piece>
+                <PieceID>59</PieceID>
+                <PackageType>CP</PackageType>
+                <Weight>1</Weight>
+                <Width>10</Width>
+                <Height>10</Height>
+                <Depth>10</Depth>
+                <PieceContents>A box full of stuff</PieceContents>
+                <PieceReference>
+                    <ReferenceID>2</ReferenceID>
+                </PieceReference>
+            </Piece>
+        </Pieces>
+        <Weight>1</Weight>
+        <WeightUnit>K</WeightUnit>
+        <GlobalProductCode>P</GlobalProductCode>
+        <LocalProductCode>WPX</LocalProductCode>
+        <Date>2016-06-07</Date>
+        <Contents>Package with a box of stuff!</Contents>
+        <DoorTo>DD</DoorTo>
+        <DimensionUnit>C</DimensionUnit>
+        <InsuredAmount>10</InsuredAmount>
+        <PackageType>CP</PackageType>
+        <IsDutiable>Y</IsDutiable>
+        <CurrencyCode>EUR</CurrencyCode>
+    </ShipmentDetails>
+    <Shipper>
+        <ShipperID>12345</ShipperID>
+        <CompanyName>Recepient Company</CompanyName>
+        <RegisteredAccount>12345</RegisteredAccount>
+        <AddressLine>1 Rue du Tresor</AddressLine>
+        <City>Paris</City>
+        <Division>Paris</Division>
+        <DivisionCode>NY</DivisionCode>
+        <PostalCode>75004</PostalCode>
+        <CountryCode>FR</CountryCode>
+        <CountryName>France</CountryName>
+        <Contact>
+            <PersonName>Some other person</PersonName>
+            <PhoneNumber>+33199998888</PhoneNumber><PhoneExtension/><FaxNumber/><Telex/></Contact>
+    </Shipper>
+    <EProcShip>N</EProcShip><Airwaybill/>
+    <LabelImageFormat>PDF</LabelImageFormat>
+</req:ShipmentRequest>
