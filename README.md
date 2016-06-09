@@ -3,6 +3,18 @@ Chai plugin to allow XML Schemas (XSD) to be used with expect.
 This is currently a stub and is under heavy development.
 All contributions are welcome.
 
+##Installation
+
+To install plugin simply run:
+`npm install chai-xsd-schema`
+
+Then add the following to your unit tests under your chai definition:
+
+```javascript
+chai.use(require('chai-xsd-schema'))
+```
+
+
 ##Usage
 This plugin adds validWithSchema to the expect validation methods.
 ```javascript
