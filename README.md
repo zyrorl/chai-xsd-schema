@@ -5,13 +5,13 @@ All contributions are welcome.
 
 ##Usage
 This plugin adds validWithSchema to the expect validation methods.
-```
+```javascript
 expect('xmldocstring').to.be.validXML(['xsdschemastring1','xsdschemastring1]);
 expect('xmldocstring').to.be.validXML('xsdschemastring');
 ```
 
 ##Simple Example
-```
+```javascript
 import chai from 'chai';
 import fs from 'fs';
 
