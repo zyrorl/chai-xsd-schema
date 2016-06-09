@@ -6,15 +6,24 @@ chai.use(require('../index'));
 
 describe('Test XML', () => {
   it('Fails with invalid input and valid schema', () => {
-    const schema = String(fs.readFileSync(`${__dirname}/schemas/dhl.xsd`));
-    const xml = String(fs.readFileSync(`${__dirname}/vectors/invalidData.xml`));
+    const schema = fs.readFileSync(`${__dirname}/schemas/dhl.xsd`, {
+      encoding: 'utf8',
+    });
+    const xml = fs.readFileSync(`${__dirname}/vectors/invalidData.xml`, {
+      encoding: 'utf8',
+    });
     // console.log(xml);
     expect(xml).to.not.be.validXML(schema);
   });
 
   it('Passes with valid input and valid schema', () => {
-    const schema = String(fs.readFileSync(`${__dirname}/schemas/dhl.xsd`));
-    const xml = String(fs.readFileSync(`${__dirname}/vectors/validData.xml`));
+    const schema = fs.readFileSync(`${__dirname}/schemas/dhl.xsd`, {
+      encoding: 'utf8',
+    });
+
+    const xml = fs.readFileSync(`${__dirname}/vectors/validData.xml`, {
+      encoding: 'utf8',
+    });
     // console.log(xml);
     expect(xml).to.be.validXML(schema);
   });
