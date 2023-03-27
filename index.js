@@ -1,4 +1,4 @@
-import xsd from 'libxml-xsd';
+import xsd from 'libxmljs2-xsd';
 
 export default function xsdValidation(chai, utils) {
   const Assertion = chai.Assertion;
